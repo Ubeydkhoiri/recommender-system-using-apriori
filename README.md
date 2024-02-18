@@ -11,7 +11,7 @@ The recommendation system aims to suggest relevant products to users based on th
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your_username/recommendation-system.git
+    git clone https://github.com/Ubeydkhoiri/recommendation-product.git
     ```
 
 2. Install dependencies:
@@ -23,16 +23,5 @@ The recommendation system aims to suggest relevant products to users based on th
 3. Run the recommendation system:
 
     ```bash
-    python recommendation_system.py
+    streamlit run app.py
     ```
-
-## Usage
-
-To recommend products using the Apriori algorithm, you can use the `recommend_products_apriori()` function provided in `recommendation_system.py`. Here's how to use it:
-
-```python
-from recommendation_system import recommend_products_apriori
-
-# Generate recommendations for a given product ID
-recommendations = recommend_products_apriori(product_id='123456', num_recommendations=5)
-print("Recommended products:", recommendations)
