@@ -67,7 +67,9 @@ def main():
         # Display text explaining user choice
         st.write(f"You choose this product")
          # Display example result image
-        st.image(fetch_image(selected_product_id), caption=f"Product ID {selected_product_id}", use_column_width=True)
+        left_co, cent_co,last_co = st.columns(3)
+        with cent_co:
+            st.image(fetch_image(selected_product_id), caption=f"Product ID {selected_product_id}")
 
         # Display text explaining user choice
         st.write(f"You may like these product")
